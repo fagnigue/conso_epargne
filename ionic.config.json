@@ -1,0 +1,7 @@
+{
+  "name": "conso_epargne",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
