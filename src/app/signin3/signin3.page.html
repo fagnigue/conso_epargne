@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+      <ion-back-button defaultHref="signin2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Etape 3/3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	
+
+	<div class="container2">
+
+		<img src="../../assets/icon/logo1.png" width="268px" height="202px">
+
+		<ion-grid>
+
+
+			<!--Selection de la commune-->
+			<ion-row>
+					<ion-col>
+
+						<ion-item>
+						    <ion-label class="commune">Commune</ion-label>
+						    <ion-select>
+						      <ion-select-option *ngFor="let city of cities">{{city.name}}</ion-select-option>
+						    </ion-select>
+						</ion-item>
+
+					</ion-col>
+			</ion-row>
+
+			<ion-row>
+				<ion-col>
+					<div class="livraison">
+						<ion-input type="text" placeholder="lieu d'habitation pour les livraisons" class="livre"></ion-input>
+					</div>
+				</ion-col>
+			</ion-row>
+
+			<ion-row>
+				<ion-col>
+					<a href="/about" class="cgu">Conditions générales d'utilisation</a>
+				</ion-col>
+			</ion-row>
+
+			<!-- aller à -->
+		    <ion-row class="ion-justify-content-end">
+		        <ion-col size="6">
+		          <div padding>  
+		                  <ion-button class="forward" (click)="nextpage()">
+		                <ion-icon size="large" name="checkmark"></ion-icon>
+		              </ion-button>
+		              </div> 
+		    	</ion-col>
+      		</ion-row>
+
+		</ion-grid>
+	</div>
+</ion-content>

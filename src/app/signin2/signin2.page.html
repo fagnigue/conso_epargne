@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+      <ion-back-button defaultHref="signin"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Etape 2/3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <div class="container2">
+
+    <img src="../../assets/icon/logo1.png" width="268px" height="202px">
+    
+    <ion-grid>
+      
+      <!-- Entrer l'email -->
+      <ion-row>
+        <ion-col>
+          <div class="email">
+            <ion-input type="email" placeholder="Email" class="em"></ion-input>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <!-- Entrer le mot de passe -->
+      <ion-row>
+        <ion-col>
+          <div class="password">
+            <ion-input type="password" placeholder="Mot de passe" class="pssd"></ion-input>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <!-- Confirmer le mot de passe -->
+      <ion-row>
+        <ion-col>
+          <div class="confirmation">
+            <ion-input type="email" placeholder="Comfirmer le mot de passe" class="cp"></ion-input>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <!-- plus de 18 ans -->
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label class="ans">J'ai plus de 18 ans</ion-label> <ion-toggle slot="end" color="primary"></ion-toggle>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <!-- aller à -->
+      <ion-row class="ion-justify-content-end">
+        <ion-col size="6">
+          <div padding>  
+                  <ion-button class="forward" (click)="nextpage()">
+                <ion-icon name="arrow-forward"></ion-icon>
+              </ion-button>
+              </div> 
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+  </div>
+	
+</ion-content>

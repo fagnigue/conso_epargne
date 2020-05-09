@@ -1,0 +1,28 @@
+
+.container2 {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 52%;
+  transform: translateY(-50%);
+}
+
+.code, .nom, .prenom, .tel {
+	border: 2px #e0e0e0 solid;
+  border-radius: 25px;
+}
+
+.cd, .nm, .pr, .tl {
+  color: #ff7a38;
+  height: 50px;
+}
+
+.genre {
+  color: #ff7a38;
+}
+
+.forward {
+	width: 100px;
+	height: 45px;
+}

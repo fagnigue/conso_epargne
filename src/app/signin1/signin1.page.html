@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Etape 1/3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	
+	<!--<div class="container1">
+	    
+	</div>-->
+	
+	<div class="container2">
+
+		<img src="../../assets/icon/logo1.png" width="268px" height="202px">
+
+		<ion-grid>
+			<!--Selection du genre-->
+			<ion-row>
+					<ion-col>
+						<ion-item>
+						    <ion-label class="genre">Genre</ion-label>
+						    <ion-select placeholder="Choisir">
+						      <ion-select-option value="Homme">Homme</ion-select-option>
+						      <ion-select-option value="Femme">Femme</ion-select-option>
+						    </ion-select>
+						</ion-item>
+					</ion-col>
+			</ion-row>
+
+			<!-- Entrer du Code de l'affiliation-->
+			<ion-row>
+				<ion-col>
+					<div class="code">
+						<ion-input type="text" placeholder="Code de l'affiliation" class="cd"></ion-input>
+					</div>
+				</ion-col>
+			</ion-row>
+
+			<!-- Entrer le nom -->
+			<ion-row>
+				<ion-col>
+					<div class="nom">
+						<ion-input type="text" placeholder="Nom" class="nm"></ion-input>
+					</div>
+				</ion-col>
+			</ion-row>
+
+			<!-- Entrer le prénom-->
+			<ion-row>
+				<ion-col>
+					<div class="prenom">
+						<ion-input type="text" placeholder="Prenom" class="pr"></ion-input>
+					</div>
+				</ion-col>
+			</ion-row>
+
+			<!-- Entrer le contact -->
+			<ion-row>
+				<ion-col>
+					<div class="tel">
+						<ion-input type="text" placeholder="Numéro de téléphone" class="tl"></ion-input>
+					</div>
+				</ion-col>
+			</ion-row>
+
+			<!-- aller à -->
+			<ion-row class="ion-justify-content-end">
+				<ion-col size="6">
+					<div padding>  
+			            <ion-button class="forward" (click)="nextpage()">
+					      <ion-icon name="arrow-forward"></ion-icon>
+					    </ion-button>
+			        </div> 
+				</ion-col>
+			</ion-row>
+
+		</ion-grid>
+
+	</div>
+
+</ion-content>
